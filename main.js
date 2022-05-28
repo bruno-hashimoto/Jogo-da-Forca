@@ -145,10 +145,13 @@ function adicionarErros() {
 }
 
 function proximoNivel() {
-
     document.getElementById('finish').style.display = 'block';
+}
+
+function novaPalavra() {
     limparPalavra();
     limparKeyboard();
+    document.getElementById('finish').style.display = 'none';
 }
 
 function limparKeyboard() {
@@ -160,8 +163,4 @@ function limparKeyboard() {
 
 function limparPalavra() {
     dataCorrect = 0;
-}
-
-function fecharModal() {
-    document.getElementById('finish').style.display = 'none';
 }
