@@ -1,0 +1,349 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.startGame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 700px;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 20px;
+  position: relative;
+  color: black;
+  background-color: #fffff7;
+}
+
+.startGame a {
+  color: #db7a42;
+  font-weight: bold;
+}
+
+.startGame small {
+  padding: 0 30px;
+}
+
+.startGame button {
+  margin-top: 30px;
+}
+
+.base {
+  display: none;
+  width: 700px;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 20px;
+  position: relative;
+  color: black;
+  background-color: #fffff7;
+}
+
+.base .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.base .title .descartes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.base .title .descartes .area-letter {
+  color: white !important;
+}
+
+.base .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.base .content .palavra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.base .footer {
+  width: 100%;
+  background-color: #9a9a9a7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+}
+
+.base .footer .area-letter {
+  cursor: pointer !important;
+}
+
+.keyboard {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.keyboard a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.keyboard .area-letter {
+  width: 30px;
+  padding: 5px;
+  height: 30px;
+  font-size: 11px;
+  margin: 5px;
+}
+
+.correct-color {
+  background-color: green;
+}
+
+.option-1-color {
+  background-color: #db7a42;
+}
+
+.option-2-color {
+  background-color: #3078cb;
+}
+
+.warning-color {
+  background-color: orange;
+}
+
+.error-color {
+  background-color: red;
+}
+
+.default-color {
+  background-color: #828282;
+}
+
+.area-letter {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.area-letter-custom {
+  margin: 5px;
+  width: 90px;
+  height: 40px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: #61c43d;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #467e31;
+  color: white;
+}
+
+.btn-info {
+  padding: 10px 20px;
+  border-radius: 7px;
+  background-color: #757973;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-info:hover {
+  background-color: #4b5149;
+  color: white;
+}
+
+.pontos {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  margin: 10px;
+  font-size: 13px;
+}
+
+.pontos small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#gameover {
+  color: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#gameover .content {
+  border-radius: 7px;
+  color: white;
+  background-color: rgba(194, 69, 69, 0.967);
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gameover .content h1 {
+  margin: 0;
+}
+
+#finish {
+  color: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+#finish .content {
+  border-radius: 7px;
+  color: white;
+  background-color: rgba(69, 194, 98, 0.967);
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#finish .content h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=estilo.css.map */

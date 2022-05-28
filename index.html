@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <div class="startGame" id="start">
+                <h1>Jogo da forca</h1>
+
+                <small>
+                    O jogo da forca é um jogo em que o jogador tem que acertar qual é a palavra proposta, tendo como dica o número de letras e o tema ligado à palavra. A cada letra errada, é desenhado uma parte do corpo do enforcado. 
+                    <a href="https://pt.wikipedia.org/wiki/Jogo_da_forca" target="_blank">
+                        Wikipédia
+                    </a>
+
+                    <br>
+                    <br>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Ahoracado_%28juego%29_-_2.gif/240px-Ahoracado_%28juego%29_-_2.gif" alt="">
+                </small>
+
+                <button class="area-letter-custom option-1-color" onclick="start()"> Iniciar Jogo </button>
+            </div>
+        </div>
+
+        <div class="base" id="player">
+            <div class="title">
+                <h1>Termo</h1>
+            </div>
+
+            <div class="content">
+                <div class="palavra"> </div>
+            </div>
+
+            <div class="footer">
+                <div class="keyboard">
+                    <a class="area-letter-custom option-1-color" onclick="restart()">Recomeçar</a>
+                    <!-- <a class="area-letter-custom option-2-color">Score</a> -->
+                </div>
+            </div>
+
+            <div class="pontos" id="placar">
+                SCORE <small id="pontos"></small>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameover">
+        <div class="content">
+            <h1>GAME OVER</h1>
+            <p>Sua pontuação foi <small id="erros"></small></p>
+            <button class="area-letter-custom option-1-color" onclick="restart()">Recomeçar</button>
+        </div>
+    </div>
+
+    <div id="finish">
+        <div class="content">
+            <h1>Parabéns</h1>
+
+            <br>
+            
+            <button class="area-letter-custom option-1-color" onclick="fecharModal()">Continuar</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

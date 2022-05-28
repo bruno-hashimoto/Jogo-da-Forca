@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.startGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 20px;
+    position: relative;
+    color: black;
+    background-color: #fffff7;
+    a{
+        color: #db7a42;
+        font-weight: bold;
+    }
+    small{
+        padding: 0 30px;
+    }
+    button{
+        margin-top: 30px;
+    }
+}
+
+.base {
+    display: none;
+    width: 700px;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 20px;
+    position: relative;
+    color: black;
+    background-color: #fffff7;
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .descartes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .area-letter {
+                color: white !important;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .palavra {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #9a9a9a7a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+
+        .area-letter {
+            cursor: pointer !important;
+        }
+    }
+}
+
+.keyboard {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+    //margin: 10px;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .area-letter {
+        width: 30px;
+        padding: 5px;
+        height: 30px;
+        font-size: 11px;
+        margin: 5px;
+    }
+}
+
+.correct-color {
+    background-color: green;
+}
+
+.option-1-color {
+    background-color: rgb(219, 122, 66);
+}
+
+.option-2-color {
+    background-color: rgb(48, 120, 203);
+}
+
+.warning-color {
+    background-color: orange;
+}
+
+.error-color {
+    background-color: red;
+}
+
+.default-color {
+    background-color: rgb(130, 130, 130);
+}
+
+.area-letter {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.area-letter-custom {
+    margin: 5px;
+    width: 90px;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgb(97, 196, 61);
+    color: white;
+    transition: 1s;
+    text-decoration: none;
+    margin: 10px;
+    &:hover {
+        background-color: rgb(70, 126, 49);
+        color: white;
+    }
+}
+
+.btn-info {
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: rgb(117, 121, 115);
+    color: white;
+    transition: 1s;
+    text-decoration: none;
+    margin: 10px;
+    &:hover {
+        background-color: rgb(75, 81, 73);
+        color: white;
+    }
+}
+
+.pontos{
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    margin: 10px;
+    font-size: 13px;
+    small{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+#gameover{
+    color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    .content{
+        border-radius: 7px;
+        color: white;
+        background-color: rgba(194, 69, 69, 0.967);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            margin: 0;
+        }
+    }
+}
+
+#finish{
+    color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    .content{
+        border-radius: 7px;
+        color: white;
+        background-color: rgba(69, 194, 98, 0.967);
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            margin: 0;
+        }
+    }
+}
