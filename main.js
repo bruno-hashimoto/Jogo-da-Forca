@@ -71,13 +71,6 @@ function comparaLetraPalavra(letra, palavra) {
     }
 }
 
-/* function proximoNivel() {
-
-    let qtdAcertos = document.getElementsByClassName('.correct-color').length;
-    
-    console.log(qtdAcertos);
-} */
-
 function posicaoLetra(letra, palavra) {
     const posicoesLetras = [];
 
@@ -157,7 +150,6 @@ function novaPalavra() {
 function limparKeyboard() {
     document.querySelector('.keyboard').innerHTML = '';
     document.querySelector('.keyboard').innerHTML = `<a class="area-letter-custom option-1-color" onclick="restart()">Recomeçar</a>`;
-    //document.querySelector('.keyboard').innerHTML = `<a class="area-letter-custom option-2-color">Score</a>`;
     start();
 }
 
